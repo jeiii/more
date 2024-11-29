@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>谷歌浏览器 · 绿色便携版</title>
+    <style>
+        body {
+            background-image: url("https://jeiii.cn/320/assets/img/bing.jpg");
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        h1 {
+            margin-bottom: 20px;
+        }
+        a {
+            display: inline-block;
+            text-decoration: none;
+            color: #333;
+            font-size: 18px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            background-color: #f0f0f0;
+            margin: 0 5px;
+        }
+        a:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+	<h1>谷歌浏览器经典版本   ：</h1>
+	<a href="https://jeiii.lanzout.com/b04wq619e" target="_blank">点击进入下载</a>
+		<button onclick="copyText()">点击复制密码：1314</button>
+			<script>
+			function copyText() {
+			var text = "1314";
+			navigator.clipboard.writeText(text).then(function() {
+			console.log("已复制到剪贴板");
+			}, function() {
+			console.log("复制失败");
+			});
+			}
+			</script>
+
+</body>
+</html>
