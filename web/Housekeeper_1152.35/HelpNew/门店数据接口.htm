@@ -1,0 +1,118 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv="Content-Language" content="zh-cn">
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312">
+<meta name="GENERATOR" content="Microsoft FrontPage 6.0">
+<meta name="ProgId" content="FrontPage.Editor.Document">
+
+<title>门店数据接口</title>
+<style>
+<!--
+h3
+	{margin-bottom:.0001pt;
+	text-align:center;
+	line-height:150%;
+	page-break-after:avoid;
+	tab-stops:right 432.0pt;
+	font-size:10.5pt;
+	font-family:宋体;
+	letter-spacing:-.1pt;
+	margin-left:0cm; margin-right:0cm; margin-top:0cm}
+-->
+</style>
+</head>
+
+<body>
+
+<p align="center"><b><font size="4" color="#000080">门店数据接口</font></b></p>
+<table border="0" width="100%">
+  <tr>
+    <td width="100%">
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family:宋体;color:black"><font size="2">
+辉煌门店版可以管理不独立核算的商业零售门市或分店，并能解决远程销售点和总公司之间的数据交换。以《管家婆》辉煌单机或网络版为后台，可根据门店和总公司之间的距离决定使用软盘或网络进行数据交换。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family:宋体;color:black"><font size="2">
+门店版不能建立基本信息也不能对期初数据进行处理，因此企业使用门店版时，需要将总店的基本信息和期初数据等信息发送给门店；而总店为了及时了解门店销售信息，需要门店实时或者定期上传数据；同样总店需要将新的商品信息和库存信息传送给门店。为了让企业对这些业务进行方便快捷的管理，系统提供了门店数据接口对门店与总店之间的数据传输进行处理。 
+</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family:宋体;color:black"><font size="2">
+门店业务流程：总部导出基本信息，门店接收基本信息，门店进行日常业务，门店业务数据结存，总部接收门店业务数据。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family:宋体;color:black"><font size="2">一、</font><b><font size="2">发送基本信息给门店</font></b></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family:宋体;color:black"><font size="2">
+门店在后台是作为一个仓库管理的，基本信息和库存数据来自于后台。因此总店需要将使用的单机版或网络版中的基本信息和库存数据发送给门店。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family: 宋体; color: black"><font size="2">操作：</font></span><span style="font-family:宋体;color:black"><font size="2">“系统维护－门店数据传输－发送基本信息到门店”。首先进行门店登记，然后导出门店需要的基本信息。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.1pt"><b>
+<span lang="EN-US" style="font-family:宋体;color:black"><font size="2">1</font></span><span style="font-family:宋体;color:black"><font size="2">、门店登记</font></span></b></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family: 宋体; color: black"><font size="2">
+所登记的门店，都对应该门店需要控制的仓库信息，这些信息在门店进行有些业务时需要受仓库控制。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.1pt"><b>
+<span lang="EN-US" style="font-family:宋体;color:black"><font size="2">2</font></span><span style="font-family:宋体;color:black"><font size="2">、基本信息导出 
+</font></span></b></p>
+<p class="MsoNormal" style="text-indent:21.75pt">
+<span style="font-family:宋体;
+color:black"><font size="2">
+鼠标指定要导出基本信息的门店，然后点击导出，从而弹出如下窗口。默认情况下，导出的基本信息保存于服务器目录下“</font></span><font size="2"><span lang="EN-US" style="font-family:宋体">\DoorData\BaseInfo\</span></font><span style="font-family:宋体"><font size="2">门店编号”下，如果要保存于本地，则在“保存本地”前打勾，然后指定目录。导出的基本信息文件名后缀<span lang="EN-US">bas,</span>名称格式为“<span lang="EN-US">baseinfo_</span>＋门店编号<span lang="EN-US">.bas</span>”</font><span style="color:black"><font size="2">。指定的门店是什么，门店编号就是什么。</font></span></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/接口1.JPG" width="383" height="255"></p>
+<p class="MsoNormal" style="text-indent: 21.1pt"><b>
+<span style="font-family:宋体;color:black"><font size="2">二、门店接收基本信息 </font>
+</span></b></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><span style="font-family: 宋体">
+<font size="2">总部导出门店所需要基本信息后，通过</font></span><font size="2"><span lang="EN-US">U</span></font><span style="font-family: 宋体"><font size="2">盘或邮件或其它方式拷贝到门店计算上，然后通过此接口，将基本信息导入账套。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/接口2.JPG" width="448" height="286"></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><span style="font-family: 宋体">
+<font size="2">首先，创建一个新账套，然后进入</font></span><span style="font-family:宋体;color:black"><font size="2">“系统维护－门店数据传输－接收基本信息”，找到存放基本信息文件的目录，选择要导入的信息内容，然后导入就行。 
+</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family:宋体;color:black"><font size="2">导入信息后，门店对应仓库信息就显示在用户配置<span lang="EN-US">-</span>系统配置里了。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.1pt"><b>
+<span style="font-family: 宋体; color: black"><font size="2">三、门店业务数据结存</font></span></b><span lang="EN-US" style="font-family:宋体;color:black"><font size="2">
+</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family: 宋体; color: black"><font size="2">
+门店进行日常业务后，需要将业务单据定期传递给总部，方便总部进行业务汇总分析。这就需要我们进行门店业务结存。</font></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt">
+<span style="font-family: 宋体; color: black"><font size="2">
+操作：进入“系统维护－门店数据传输－业务数据结存”，选择时间段，选择导出过账单据还是草稿单据，选择保存位置，然后导出就行。</font></span></p>
+<p class="MsoNormal" style="text-indent:21.0pt">
+<span style="font-family: 宋体; color: black"><font size="2">默认情况下，业务结存数据保存于安装目录“</font></span><font size="2"><span lang="EN-US" style="font-family:宋体">\DoorData\BillPake</span></font><span style="font-family:宋体"><font size="2">”下，文件名格式“<span lang="EN-US">bill_</span>＋门店编号<span lang="EN-US">_</span>年月日<span lang="EN-US">.WRK</span>”，后缀<span lang="EN-US">WRK</span>。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/接口3.JPG" width="394" height="299"></p>
+<p class="MsoNormal" style="text-indent: 21.1pt"><b>
+<span style="font-family:宋体;color:black"><font size="2">四、接收门店业务数据 </font>
+</span></b></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family:宋体;color:black"><font size="2">门店上传来的业务数据，通过该接口导入总账。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span style="font-family:宋体;color:black"><font size="2">操作：进入“系统维护<span lang="EN-US">-</span>门店数据接口<span lang="EN-US">-</span>接收门店业务数据”，然后打开要导入的门店业务数据文件，接收就行。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.1pt"><b>
+<span style="font-family: 宋体; color: black"><font size="2">注意：</font></span></b><span style="font-family: 宋体; color: black"><font size="2">门店系统必须先开账才能接收数据。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.1pt"><b>
+<span style="font-family:宋体;color:black"><font size="2">注意</font></span></b><span style="font-family:宋体;color:black"><font size="2">：总部基本信息有变化，或者价格有变化，都应该向门店导出基本信息。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.1pt"><b>
+<span style="font-family:宋体;color:black"><font size="2">注意</font></span></b><span style="font-family:宋体;color:black"><font size="2">：门店业务数据导入后形成草稿，需要从业务草稿中再次过账才行。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.1pt"><b>
+<span style="font-family: 宋体"><font size="2">注意</font></span></b><span style="font-family: 宋体"><font size="2">：单机版或网络版当门店版使用时，不允许录入基本信息，其基本信息必须由总部提供。</font></span></p>
+<V:SHAPE  
+id=_x0000_i1025 style="HEIGHT: 197.25pt; WIDTH: 374.25pt"  
+type="#_x0000_t75">
+<p style="TEXT-INDENT: 21.75pt">
+<span style="mso-bidi-font-size: 10.0pt; mso-hansi-font-family: Times New Roman">
+<font size="2"><span lang="EN-US">
+<O:P> 
+&nbsp;</span></font></span></p>  
+ 
+    </td>
+  </tr>
+</table>
+ 
+</body> 
+ 
+</html> 

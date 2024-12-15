@@ -1,0 +1,71 @@
+<html>
+<HEAD>
+  <META NAME="Author" CONTENT="Windows Help Designer">
+  <META NAME="GENERATOR" CONTENT="Microsoft FrontPage 6.0">
+<TITLE>商品自动盘盈盘亏</TITLE>
+</HEAD>
+<BODY>
+<P align="center"><strong><font color="#000080" size="4">商品自动盘盈盘亏</font></strong></P>
+<table border="0" width="100%">
+  <tr>
+    <td width="100%">
+<blockquote>
+	<P><font size="2">实际工作中月底盘点时工作量相当于大，如果仍然采用报损报溢单显得力不从心。为此我们提供了库存自动盘盈盘亏库存管理模块。</font></P>
+	<P><font size="2">自动盘点分总量盘点和分量盘点两种模式：</font></P>
+	<P><font size="2">总量盘点模式下，任何人都可以进行修改处理，总量模式，往往是盘点汇总处理。</font></P>
+	<P><font size="2">分量盘点模式下，操作员只能对自己的盘点数据进行修改处理，直到分量盘点结束转为总量盘点。分量盘点往往针对多人分批分次进行盘点。</font></P>
+</blockquote>
+      <font size="2">　　操作：“数据查询”-“库存查询”-“自动盘盈盘亏”</font>
+<P><font size="2">　　在进行盘点前，先进行选择盘点仓库、截止日期和盘点模式。如下：</font></P> 
+      <P><font size="2">　　<img border="0" src="库存查询/自动盘盈盘亏_条件.jpg" width="286" height="225"></font></P> 
+<blockquote>
+	<P><font size="2">特别说明：此处的截止日期只对移动加权平均有用。截止日期的意义在于获得当时的库存，方便进行比较。对于非移动加权商品，则进行倒推计算后，批次信息可能存在偏差。</font></P>
+	<P><font color="#0000FF"><b>一、总量盘点模式</b></font></P>
+	<P style="line-height: 150%"><font size="2">总量盘点模式：是将所选仓库中的所有商品的库存情况均显示出来，
+	用户将该报表打印出来，进行库存盘点，核对实际数量。然后，将盘点数量直接录入总量盘点中的“盘点数量”处（见下图），系统自动生成盈亏数量。盘点结束后，点击“存为草稿”按钮后，系统会根据盈亏数量生成报损单或报溢单，以便进行处理。该模式的好处是，直观，方便，简单易用，但如果盘点数量量过大时，建议使用分量盘点模式。</font></P>
+	<P style="line-height: 150%"><font size="2">总量盘点窗口如下：</font></P>
+</blockquote>
+      <P><font size="2">　　<img border="0" src="库存查询/自动盘盈盘亏_总量盘点.jpg" width="741" height="323"></font></P> 
+<blockquote>
+	<P style="line-height: 150%"><font size="2"><b>新增</b>：即添加要盘点的商品，可以选择一个、一类和全部。如果是加权平均的商品，则直接选择，只有一条信息；如果是其它成本算法，则需要指定批次或系统自动将库存中所有批次展示出来。</font></P>
+	<P style="line-height: 150%"><font size="2">对于非加权平均商品，则如果选择某一具体商品，则弹出批次表进行选择，如果不是批次表中批次，则点退出，新增一个批次信息；</font></P>
+</blockquote>
+      <P style="line-height: 150%"><font size="2">　　　如果是选择一类或全部，且是非加权平均的商品，则自动将所有批次展开，不需要一个批次一个批次进行选择。</font></P>
+<blockquote>
+	<P style="line-height: 150%"><font size="2">如果要删除某一行商品，则在商品全名栏选中，清除全名，则鼠标点开后，此行信息就自动删除。</font></P>
+	<P style="line-height: 150%"><font size="2"><b>未盘点表</b>：即将所有未盘点到的库存可能存在的批次或商品罗列出来。此功能用于解决我们实际生活中可能存在的，账面上有数量，而实际仓库已经没有了，我们则在已经盘点表中不再将其它商品信息进行盘点，从而可能漏掉一些商品，从而不能够准确地盘点。</font></P>
+</blockquote>
+<P style="line-height: 150%"><font size="2">　　　未盘点表中，库存数量为实际库存量，盘点数量为0；</font></P>
+<blockquote>
+	<P style="line-height: 150%"><font size="2"><b>全选：</b>即对未盘点商品表中某一商品或批次商品选中，方便将这些选中的商品信息转换到已经盘点表中，形成完整的盘点。</font></P>
+	<P style="line-height: 150%"><font size="2"><b>未盘转已盘：</b>即将未盘点商品列表中已经选中的商品信息，以盘点数量为0添加到已盘点列表中。</font></P>
+</blockquote>
+      <P style="line-height: 150%"><font size="2">　　　<b>已盘点表：</b>即从未盘点表切换到已盘点商品列表；</font></P> 
+<P style="line-height: 150%"><font size="2">　　<b>　存为草稿：</b>即根据盘盈盘亏情况，生成报损报溢单草稿，完成实际的盘点，修正账面库存；</font></P>
+<blockquote>
+	<P style="line-height: 150%"><font size="2"><b>刷新库存：</b>该功能主要用于对库存数量的刷新。使用该功能后，盘点表中的库存数据将按照截止日期重新显示，默认情况下，该库存数据是盘点开始时的库存情况。</font></P>
+	<P><font color="#0000FF"><b>二、分量盘点模式</b></font></P>
+	<P style="line-height: 150%"><font size="2">
+	分量盘点模式是将盘点数据以多人同时录入的方式进行登记，当所有盘点完成后，点击“全部分量盘点结束”按钮，系统会自动将多人录入的盘点数量根据商品进行合并，与库存数量进行对比，从而生成盈亏数量。该方式的好处是，可以多人同时录入，提高了盘点及盘点录入的效率。</font></P>
+</blockquote>
+      <P><font size="2">　　<img border="0" src="库存查询/自动盘盈盘亏_分量盘点1.jpg" width="800" height="354"></font></P> 
+<P><font size="2">　　</font></P>
+<blockquote>
+	<P style="line-height: 150%"><font size="2">分量盘点模式下，每个操作员录入的数据，只有自己可以看到，也只有自己才能修改。</font></P>
+	<P style="line-height: 150%"><font size="2">分量盘点下，对于加权平均的库存数量都一样，对于非加权平均的商品，如果发现某一批次已经被其它人盘点，则你再盘点到此批次时，商品库存数量自动从已经盘点批次处获得，你只需要录入你的盘点数量。</font></P>
+	<P style="line-height: 150%"><font size="2">全部盘点录入完成后，点击“<b>全部分量盘点结束</b>”按钮，系统才将所有每个人盘点的数据进行汇总处理，此时，盘点模式自动转换到总量格式下处理。汇总量，库存数量不变，只是盘点数量进行汇总处理。</font></P>
+</blockquote>
+      <P><font size="2">　　　分量结束后，系统将各分量盘点结果进行汇总处理，从而得到准确的盘点结果。</font></P> 
+      <P><font size="2">　　　说明：如果操作员没有成本权限，则相关库存单价与金额不能查看。</font></P>
+<blockquote>
+	<P><font size="2">刷新库存：即盘点过程刷新截止日期时的库存数量。此种操作往往用于在盘点进程中又补录截止日期前的物流单据，从而更好地符合自己盘点的需求。</font></P>
+</blockquote>
+<P><font size="2">　</font></P> 
+     <blockquote>
+		<p>　</p>
+</blockquote>
+    </td>
+  </tr>
+</table>
+</BODY>
+</HTML>

@@ -1,0 +1,135 @@
+<html>
+<HEAD>
+  <META NAME="Author" CONTENT="Windows Help Designer">
+  <META NAME="GENERATOR" CONTENT="Microsoft FrontPage 6.0">
+<TITLE>SQL Server 2008 R2 的安装</TITLE>
+</HEAD>
+<BODY>
+<p style="line-height: 150%" align="center"><font size="4" color="#000080"><b>
+SQL Server 2008 R2 的安装</b><span style="mso-bidi-font-size: 10.0pt">&nbsp;&nbsp;</span></font></p>
+<table border="0" width="100%">
+  <tr>
+    <td width="100%">
+<p style="line-height: 150%"><font size="2" face="宋体"><span style="mso-bidi-font-size: 10.0pt; color: black">　</span><u2:p><span lang="EN-US" style="mso-bidi-font-size: 12.0pt"><o:p>            
+ 
+
+</span></font><span lang="EN-US" style="mso-bidi-font-size: 12.0pt"> 
+<font size="4" face="宋体">一、安装前的准备：</font></span></p>
+<p style="line-height: 150%"><span lang="en-us"><font face="宋体" size="4">&nbsp;&nbsp;
+</font></span>
+<o:p>            
+ <o:p>            
+ <span lang="EN-US" style="font-family:宋体"><font size="2">1. </font></span>
+<span style="font-family:宋体"><font size="2">需要<span lang="EN-US">.Net Framework 
+3.5</span>，在<span lang="EN-US">SQL Server 2008 R2</span>安装的前会自动更新安装</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span lang="EN-US" style="font-family:宋体"><font size="2">&nbsp;2. </font></span>
+<span style="font-family:宋体"><font size="2">需要<span lang="EN-US">Widnows 
+PowerShell</span>的支持<span lang="EN-US">,WPS</span>是一个功能非常强大的<span lang="EN-US">Shell</span>应用，命令与<span lang="EN-US">DOX/UNIX</span>兼容并支持直接调用<span lang="EN-US">.NET</span>模块做行命令编辑，是非常值得深入研究的工具（在<span lang="EN-US">SQL2008 
+R2</span>安装时会自动更新安装）</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span lang="EN-US" style="font-family:宋体"><font size="2">&nbsp;3. </font></span>
+<span style="font-family:宋体"><font size="2">需要确保<span lang="EN-US">Windows 
+Installer</span>的成功启动，需要<span lang="EN-US">4.5</span>以上版本（需要检查服务启动状态<span lang="EN-US">service.msc</span>）</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span lang="EN-US" style="font-family:宋体"><font size="2">&nbsp;4. </font></span>
+<span style="font-family:宋体"><font size="2">需要<span lang="EN-US">MDAC2.8 sp1</span>的支持（<span lang="EN-US">XP</span>以上系统中已集成）</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span lang="EN-US" style="font-family:宋体"><font size="2">&nbsp;5. 辉煌.NET </font>
+</span><span style="font-family:宋体"><font size="2">的数据库必须选择<span lang="EN-US">SQL 
+Server 2008 R2</span>，机器上已经安装<span lang="EN-US">Visual studio 2008</span>则需要重新安装<span lang="EN-US"> 
+2008 R2</span>版本。</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><span style="font-family:宋体">
+二、安装配置过程</span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<span lang="EN-US" style="font-family:宋体"><font size="2">&nbsp;1.</font></span><span style="font-family:宋体"><font size="2">进入<span lang="EN-US">SQL 
+Server</span>安装中心，如图1所示：</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+<img border="0" src="系统管理和其它/1.JPG" width="600" height="450">（图1）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">2<font size="2">、若要创建全新安装，选中右侧红圈部分，进行安装如图2所示：</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<font size="2"><img border="0" src="系统管理和其它/2.JPG" width="600" height="450">（图2）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+3、图2中规则必须全部通过后单击“确定”进入下一步操作界面，如图3</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<font size="2"><img border="0" src="系统管理和其它/3.JPG" width="600" height="450">（图3）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+4、进行到此步骤如果没有产品密钥可以选择安装试用版（180天试用期）。输入产品密钥后单击“下一步”进入下一操作界面，如图4所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<font size="2"><img border="0" src="系统管理和其它/4.JPG" width="600" height="450">(图4)</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">5、
+图4中选择红圈选项“我接受许可条款”，点击“下一步”进入图5</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+<img border="0" src="系统管理和其它/5.JPG" width="600" height="450">（图5）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+6、点击“安装”，进入下一步操作界面，如图6所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/6.JPG" width="600" height="450"><font size="2">（图6）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+7、在图6安装程序支持规则检测中，全部通过后点击“下一步”进入如图7所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+<img border="0" src="系统管理和其它/7.JPG" width="600" height="450">（图7）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+8、图7中勾选红圈部分，点击“下一步”进入如图8所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/8.JPG" width="600" height="450"><font size="2">（图8）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+9、图8中单击“全选”按钮选择全部组件，上图红框处更改安装目录到空闲较多的逻辑盘下，如果系统盘比较空闲，可以使用默认值，推荐更改安装，点击“下一步”进入如图9所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/9.JPG" width="600" height="450"><font size="2">（图9）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+10、点击“下一步”进入如图10所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/10.JPG" width="600" height="450"><font size="2">（图10）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+11、在图10实例配置中选中“命名实例”，输入实例名</font><span style="FONT-FAMILY: 宋体" lang="EN-US"><font size="2">（这里需要注意的是，如果服务器上已经安装有SQL2000，请不要使用SQL2000的实例名进行升级处理），点击“下一步”进入如图11所示</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/11.JPG" width="600" height="450"><font size="2">（图11）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+12、图11中确定所选目录磁盘空闲空间足够则继续单击“下一步”进入如图12所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/12.JPG" width="600" height="450"><font size="2">（图12）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">13、 </font>
+<span style="FONT-FAMILY: 宋体" lang="EN-US"><font size="2">
+服务器配置，服务器配置主要是服务启动帐户的配置，可以通过单击“对所有SQL Server 服务使用相同账户”按钮，统一指定SQL 
+Server的指定账户，服务的帐户名推荐使用NT AUTHORITY\SYSTEM的系统帐户</font></span><font size="2">。单击“确定”后点击“下一步”进入如图13所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/13.JPG" width="600" height="450"><font size="2">（图13）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+14、数据库引擎配置中为数据库引擎指定身份验证模式和管理，图13中如红圈所示，选择混合模式，输入密码，</font><span style="FONT-FAMILY: 宋体" lang="EN-US"><font size="2">SQL2008对sa的密码强度要求相对比较高，需要有大小写字母、数字及符号组成，否则将不允许你继续安装。在&quot;指定Sql 
+Server管理员&quot;中最好指定本机的系统管理员administrator。设置确定后点击“下一步”进入如图14所示</font></span></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/14.JPG" width="600" height="450"><font size="2">（图14）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+15、图14中如红圈部分所示，单击“添加当前用户”，确定后点击“下一步”进入如图15所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/15.JPG" width="600" height="450"><font size="2">（图15）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+16、图15中选择“安装本机模式默认配置”选项，点击“下一步”进入如图16所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/16.JPG" width="600" height="450"><font size="2">（图16）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+17、图16中是错误报告，如果不想把错误报告发送给 Microsoft 可以不选任何选项，点击“下一步”进入如图17所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/17.JPG" width="600" height="450"><font size="2">（图17）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+18、图17中安装配置规则检测通过后，点击“下一步”进入如图18所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/18.JPG" width="600" height="450"><font size="2">（图18）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+19、图18所示准备安装界面，列出了之前所做的设置以供检查，如果还有待修改之选项可以单击“上一步”返回修改。如检查无误则点击“安装”，开始安装</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/19.JPG" width="600" height="450"><font size="2">（图19）</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">
+20、图19中查看安装进度，安装结束后进入到如图20所示</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">
+<img border="0" src="系统管理和其它/20.JPG" width="600" height="450"><font size="2">(图20)</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt"><font size="2">20、安装完成。</font></p>
+<p class="MsoNormal" style="text-indent: 21.0pt">　</p>
+<u1:p eqn="prod @6 1 2">    
+ <u1:p>   
+    </td>
+  </tr>
+</table>
+</BODY>       
+</HTML>

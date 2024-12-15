@@ -1,0 +1,104 @@
+<HTML>
+<HEAD>
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+<param name="FrameName" value="right">
+<param name="WindowName" value="win">
+<param name="Font" value="MS Sans Serif,9,0">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="系统维护与权限设置">
+		<param name="Local" value="Z系统维护与权限设置.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="基本信息和期初建账">
+		<param name="Local" value="z基本信息与期初建帐.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="进货管理">
+		<param name="Local" value="z进货管理.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="销售管理">
+		<param name="Local" value="z销售管理.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="零售管理">
+		<param name="Local" value="零售管理.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="库存管理">
+		<param name="Local" value="z库存管理.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="往来管理">
+		<param name="Local" value="z往来业务.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="账务管理">
+		<param name="Local" value="z财务管理.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="代销业务">
+		<param name="Local" value="z代销业务.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="借欠业务">
+		<param name="Local" value="z借欠业务.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="委外加工">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="配送中心">
+		<param name="Local" value="配送管理.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="生产组装">
+		<param name="Local" value="生产组装.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="其它功能">
+		<param name="Local" value="z其它功能.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="辅助功能">
+		<param name="Local" value="z辅助功能.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="客户关系">
+		<param name="Local" value="Z客户关系.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="数据接口">
+		<param name="Local" value="z数据接口.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="辉煌Ⅱ特色功能">
+		<param name="Local" value="辉煌Ⅱ特色功能.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="五金建材版特色功能">
+		<param name="Local" value="五金建材.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="皮革布匹版特色功能">
+		<param name="Local" value="皮革布匹.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="电脑通讯版特色功能">
+		<param name="Local" value="电脑通讯.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="附件">
+		<param name="Local" value="z附录.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="系统安装与日常维护">
+		<param name="Local" value="Z系统安装与日常维护注意.htm">
+		</OBJECT>
+</UL>
+</BODY>
+</HTML>
