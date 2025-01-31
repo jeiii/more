@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>个人网址收藏</title>
+  <style>
+    body {
+      background-image: url('https://jeiii.cn/img/004.jpg');/* 设置背景图片 */
+      background-size: cover;/* 背景图片覆盖整个页面 */
+      background-position: center;/* 背景图片居中显示 */
+      display: flex;/* 使用Flexbox布局 */
+      justify-content: center;/* 水平居中 */
+      align-items: center;/* 垂直居中 */
+      height: 100vh;/* 视口高度 */
+      margin: 0;/* 移除默认边距 */
+      font-family: Arial, sans-serif;/* 设置字体 */
+    }
+
+    input[type="password"] {
+      padding: 10px;/* 输入框内边距 */
+      font-size: 16px;/* 字体大小 */
+      border: 2px solid #ccc;/* 边框样式 */
+      border-radius: 5px;/* 边框圆角 */
+      margin-right: 5px;/* 与按钮之间的间距 */
+    }
+
+    button {
+      padding: 10px 40px;/* 按钮内边距 */
+      font-size: 16px;/* 字体大小 */
+      background-color: #66a740;/* 按钮背景颜色 */
+      color: white;/* 按钮文字颜色 */
+      border: none;/* 无边框 */
+      border-radius: 5px;/* 边框圆角 */
+      cursor: pointer;/* 鼠标悬停时显示指针 */
+      transition: background-color 0.3s;/* 背景颜色变化过渡效果 */
+    }
+
+    button:hover {
+      background-color: #6b220c;/* 鼠标悬停时按钮背景颜色 */
+    }
+
+    h2 {
+      color: rgb(255, 255, 255);
+    }
+  </style>
+  <script>
+    function redirectToPage() {
+      var input = document.getElementById("pageInput").value;
+      var url = input + ".html";
+      window.location.href = url;
+    }
+  </script>
+</head>
+
+<body>
+
+  <div>
+    <h2>个人网址收藏：</h2>
+    <input type="password" id="pageInput" name="pageName">
+    <button onclick="redirectToPage()">点击进入</button>
+  </div>
+
+</body>
+
+</html>
